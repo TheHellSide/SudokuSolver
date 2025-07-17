@@ -113,6 +113,7 @@ public class Main {
                             board[row][column] = numberToTry;
 
                             if (solveBoard(board)){
+                                // DEFAUTL RECURSION CASE
                                 return true;
                             }
                             else {
@@ -120,12 +121,12 @@ public class Main {
                             }
                         }
                     }
-
+                    // IMPOSSIBLE FLAG
                     return false;
                 }
             }
         }
-
+        // RESOLVED FLAG
         return true;
     }
 }
